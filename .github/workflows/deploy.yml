@@ -26,5 +26,5 @@ jobs:
 
       - name: Build and deploy
         run: |
-          gcloud builds submit --tag gcr.io/tempconv1-389923/tc
-          gcloud run deploy --image gcr.io/tempconv1-389923/tc --platform managed --region us-central1 --allow-unauthenticated --project your-project-id
+          gcloud builds submit --tag gcr.io/tempconv1-389923/flask-app
+          gcloud run deploy --image gcr.io/tempconv1-389923/tc --platform managed --region us-central1 --allow-unauthenticated --project tempconv1-389923
